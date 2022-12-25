@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintWidth_percent="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="50dp"
+        android:text="Enter Your Name Below HERE"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        tools:ignore="HardcodedText" />
+    <EditText
+        android:id="@+id/eTxtName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintWidth_percent="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtName"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:autofillHints="John Doe"
+        tools:ignore="LabelFor,TextFields" />
+
+    <TextView
+        android:id="@+id/txtID"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintWidth_percent="0.9"
+        app:layout_constraintTop_toBottomOf="@+id/eTxtName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp"
+        android:text="Enter Your ID HERE"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        tools:ignore="HardcodedText" />
+    <EditText
+        android:id="@+id/eTxtID"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintWidth_percent="0.9"
+        app:layout_constraintTop_toBottomOf="@+id/txtID"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:autofillHints="1234567890"
+        tools:ignore="LabelFor,TextFields" />
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintWidth_percent="0.9"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Submit"
+        android:textSize="25sp"
+        android:layout_marginBottom="30dp"
+        android:onClick="submit"
+        tools:ignore="HardcodedText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
